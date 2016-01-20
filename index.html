@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+	<meta charset="utf-8">
+	<title>Formulário</title>
+</head>
+<body ng-controller="appController">
+<div align="center">
+<form>
+	<label>CEP </label><br>
+	<input type="text" ng-model="endereco.cep" ng-blur="pegaCep(endereco.cep)"><br>
+	<label>Estado </label><br>
+	<input type="text" ng-model="endereco.estado"><br>
+	<label>Cidade </label><br>
+	<input type="text" ng-model="endereco.cidade" size="30"><br>
+	<label>Bairro </label><br>
+	<input type="text" ng-model="endereco.bairro" size="30"><br>
+	<label>Rua </label><br>
+	<input type="text" ng-model="endereco.rua" size="30"><br>
+</form>
+</div>
+</body>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular.min.js"></script>
+<script src="js/angular-route.js"></script>
+<script src="js/app.js"></script>
+<script src="js/appController.js"></script>
+</html>
